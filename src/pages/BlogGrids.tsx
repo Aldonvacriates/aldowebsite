@@ -40,11 +40,13 @@ const posts = [
 ];
 
 export default function BlogGrids() {
+  const delayPattern = [".2s", ".3s", ".4s"];
+
   return (
-    <section className="pt-[140px] sm:pt-[180px] lg:pt-[220px]">
+    <section className="pt-[240px]">
       <div className="px-4 xl:container">
         <div
-          className="wow fadeInUp relative mx-auto mb-12 max-w-[700px] text-center md:mb-20"
+          className="wow fadeInUp relative mx-auto mb-12 max-w-[700px] pt-6 text-center md:mb-20 lg:pt-16"
           data-wow-delay=".2s"
         >
           <span className="title">CASE STUDIES</span>
@@ -60,7 +62,7 @@ export default function BlogGrids() {
           <div className="flex flex-wrap -mx-4">
             {posts.map((post, index) => (
               <div key={`${post.title}-${index}`} className="w-full px-4 md:w-1/2 lg:w-1/3">
-                <div className="mb-10 wow fadeInUp" data-wow-delay=".2s">
+                <div className="mb-10 wow fadeInUp" data-wow-delay={delayPattern[index % delayPattern.length]}>
                   <div className="relative mb-8 overflow-hidden rounded">
                     <Link to="/blog-details" className="block">
                       <img src={post.image} alt={post.title} className="w-full" />

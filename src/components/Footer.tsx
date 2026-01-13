@@ -29,7 +29,7 @@ export default function Footer() {
               </p>
               <div className="flex items-center space-x-5">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/14S6aHN6K15/"
                   name="social-link"
                   aria-label="social-link"
                   className="text-dark-text hover:text-primary dark:hover:text-white"
@@ -231,7 +231,7 @@ export default function Footer() {
                   name="email"
                   id="newsletter-email"
                   placeholder="Email address"
-                  className="pladeholder-opacity-40 w-full rounded border py-3 pl-5 pr-12 text-base text-dark-text outline-none focus:border-primary dark:border-transparent dark:bg-[#2C3443]"
+                  className="placeholder-opacity-40 w-full rounded border py-3 pl-5 pr-12 text-base text-dark-text outline-none focus:border-primary dark:border-transparent dark:bg-[#2C3443]"
                 />
                 <button
                   type="button"
